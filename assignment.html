@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function add(){
+      const one = Number(document.getElementById("one").value) ;  
+      const two =  Number(document.getElementById("two").value); 
+      const output = document.getElementById("output").innerHTML=one + two;
+    }
+</script> 
+ 
+<body>
+    <h2>Fun with Numbers</h2>
+    Input <input type="number" id="one"> <br> <br>
+    Output <input type="number" id="two"> <br> <br>
+    <button onclick="add()">Add</button> <p>The Sum is: <span id="output"></span> </p>
+</body>
+</html>
