@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(51, 57, 90);
+    /* background:url(images/background.jpg) */
+}
+h1{
+    color: rgb(157, 184, 40);
+}
+h3{
+    color: rgb(29, 25, 16);
+}
+img {
+    /* border: 1px solid #ddd; */
+    border-radius: 4px;
+    padding: 5px;
+    width: 400px;
+    height: 400px;
+  }
+  ol{
+      color: chartreuse;
+  }
+   a{
+      color: chartreuse;
+  }
