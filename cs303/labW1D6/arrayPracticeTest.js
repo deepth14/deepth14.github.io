@@ -1,14 +1,14 @@
 "use strict";
 
 
-const assert = require("assert");  
-const myExports = require("./arrayPractice.js");  
-const doubleNums = myExports.doubleNums;  
-const doubleAges = myExports.doubleAges;
-const filterEven = myExports.filterEven;
-const filterOver10 = myExports.filterOver10;
-const findEvenNum = myExports.findEvenNum;
-const findEvenAge = myExports.findEvenAge;  
+// const assert = require("assert");  
+// const myExports = require("./arrayPractice.js");  
+// const doubleNums = myExports.doubleNums;  
+// const doubleAges = myExports.doubleAges;
+// const filterEven = myExports.filterEven;
+// const filterOver10 = myExports.filterOver10;
+// const findEvenNum = myExports.findEvenNum;
+// const findEvenAge = myExports.findEvenAge;  
 
 
 let numArray;
