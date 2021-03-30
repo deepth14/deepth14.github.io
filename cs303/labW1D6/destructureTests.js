@@ -5,7 +5,7 @@
 
 // const assert = require("assert");
 // const myExports = require("./destructure.js");
-// const topSalary = myExports.topSalary;  //do this for all of the functions used in the Mocha tests
+// const topSalary = myExports.topSalary;  
 // const getDateAgo = myExports.getDateAgo;
 // const getLocalDay = myExports.getLocalDay;
 // const getWeekDay = myExports.getWeekDay;

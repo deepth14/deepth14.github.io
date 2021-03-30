@@ -1,9 +1,9 @@
 "use strict";
 
 
-const assert = require("assert");  //always need this with node
-const myExports = require("./arrayPractice.js");  //with node need the name of your file with your functions here
-const doubleNums = myExports.doubleNums;  //do this for all of the functions used in the Mocha tests
+const assert = require("assert");  
+const myExports = require("./arrayPractice.js");  
+const doubleNums = myExports.doubleNums;  
 const doubleAges = myExports.doubleAges;
 const filterEven = myExports.filterEven;
 const filterOver10 = myExports.filterOver10;
