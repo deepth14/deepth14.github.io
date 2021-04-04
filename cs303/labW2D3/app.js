@@ -32,7 +32,8 @@ return num * factorial(num-1);
  * @param {number} num
  * @returns {number}number;
  */
-function fibonacchi(num){
+
+ function fibonacchi(num){
 if(num<=1){
 return num;
  }
