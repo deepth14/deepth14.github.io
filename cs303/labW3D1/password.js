@@ -23,9 +23,10 @@ function askPassword(ok, fail) {
   };
   
  console.log(askPassword(user.loginOk.bind(user), user.loginFail.bind(user)));
+
  function askPassword2(ok, fail) {
-    let password ="rockstar";
-   if (password == "rockstar") return ok();
+    let password ="1234";
+   if (password === "rockstar") return ok();
    else return fail();;
  }
  
