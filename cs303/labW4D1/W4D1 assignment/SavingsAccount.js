@@ -1,10 +1,7 @@
 "use strict";
 
-// eslint-disable-next-line no-unused-vars
-var log = console.log;
-// eslint-disable-next-line no-redeclare
+
 if (typeof alert === "undefined") var alert = console.log;
-// eslint-disable-next-line no-undef, no-redeclare
 if (typeof prompt === "undefined") var prompt = require("prompt-sync")();
 
 /*global Account, assert

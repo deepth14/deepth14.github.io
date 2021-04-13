@@ -1,6 +1,5 @@
 "use strict";
 if (typeof alert === "undefined") var alert = console.log;
-
 if (typeof prompt === "undefined") var prompt = require("prompt-sync")();
 
 
