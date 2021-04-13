@@ -1,39 +1,79 @@
-// "use strict"
+// "use strict";
+// /* eslint-disable */
 
 // function area() { return this.side * this.side }
-// const squareProto ={area:area};
+// const squareProto = {area: area};
 // const square1 =  {
-//     side:5,
-//    __proto__:squareProto
-// }
+//     side: 5,
+//     __proto__: squareProto
+// };
 
-    
-//     function Square(side){
-//         this.side=side;
-//     }
-//     square.prototype.area= area
+// function Square(side){
+//     this.side = side;
+// }
+// Square.prototype.area = area;
 
 // class Square2 {
-//     constractor(side){
-//         this.side=side;
+//     constructor(side){
+//         this.side = side;
 //     }
-//     area(){return this.side*this.side}
-//     console.log("expect 25: ", square1.area());
+//     area(){ return this.side * this.side }
+// }
+
+// console.log("expect 25: ", square1.area());
 // console.log("expect 1: ", Object.getOwnPropertyNames(square1).length);
+
 // const constSquare1 = new Square(7);
 // console.log("expect 49: ", constSquare1.area());
 // console.log("expect 1: ", Object.getOwnPropertyNames(constSquare1).length);
+
 // const classSquare = new Square2(10);
 // console.log("expect 100: ", classSquare.area());
 // console.log("expect 1: ", Object.getOwnPropertyNames(classSquare).length);
-function User(firstname, lastname, birthDate) {
-    this.firstname = firstname;
-    this.lastname = lastname;
-    this.birthDate = birthDate;
-    this.getFullName=function(){ return this.firstname + ' ' + this.lastname;}
-    this.getAge=function(){return new Date().getFullYear() - this.birthDate.getFullYear()}
+
+// /* add a new class, MorphableSquare, 
+// extends the square class
+// has properties color and className
+// has method morph that will set the value of the className property to the value of the color property
+// Create two morphableSquare objects
+// */
+
+// class MorphableSquare extends Square2 {
+//     constructor(side, color, className){
+//         super(side);
+//         this.color = color;
+//         this.className = className;
+//     }
+//     morph(){
+//         this.className = this.color;
+//     }
+// }
+
+// const morph2blue = new MorphableSquare(3, "blue", "white");
+// const morph2green = new MorphableSquare(3, "green", "white");
+// console.log("expect 9: ", morph2blue.area());
+// console.log("expect 3: ", Object.getOwnPropertyNames(morph2blue).length);
+ 
+
+/* This factory function returns a closure.  Solution to exam 2 question. */
+ function makeContacts() {
+    let contacts = [];
+
+    function keepContacts(name) {
+        let aContact = contacts.find(contact => (contact.name === name) ? true : false);
+        if (aContact !== undefined) {
+            return aContact.phone;
+        } else {
+            contacts.push( {
+                name: name,
+                phone: prompt("Please enter phone number: ")
+            });
+        }
     }
-    let user1 = new User('John', 'Smith', new Date('2000-10-01'));
-    let user2 = new User('Edward', 'Hopkins', new Date('1991-11-14'));
-    function getFullName() { return this.firstname + ' ' + this.lastname;}
-function getAge() {return new Date().getFullYear() - this.birthDate.getFullYear()}
+    return keepContacts;
+}
+// test it
+const myContacts = makeContacts();
+myContacts("Bill");
+myContacts("Bob");
+console.log("should find number for bill: " + myContacts("Bill"));
