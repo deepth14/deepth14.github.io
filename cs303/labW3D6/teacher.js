@@ -20,10 +20,10 @@ Student.prototype.learn = function(subject){
     return (this.name + " just learned " + subject);
 };
 
-// const john = new Student();
+ const john = new Student();
 
-// john.initialize("John", 25);
-// console.log(john.learn("Inheritance"));
+john.initialize("John", 25);
+ console.log(john.learn("Inheritance"));
 
 const Teacher=function(){}
 Teacher.prototype.initialize=function(name,age){
