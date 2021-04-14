@@ -1,4 +1,4 @@
-const{Clock}=require("./clock")
+const{Clock}=require("./Clock")
 class ExtendedClock extends Clock{
     constructor({ template },stick=4000){
         super({ template })
